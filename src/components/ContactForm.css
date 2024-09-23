@@ -1,0 +1,108 @@
+.contact {
+    padding: 60px 20px;
+    background: #000; /* Dark background */
+    color: #fff;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2em; /* Larger font size for heading */
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.contact .logo-container {
+    margin: 20px 0; /* Space around the logo */
+}
+
+.contact .ie-logo {
+    width: 100px; /* Adjust the width of the logo */
+    display: block;
+    margin: 0 auto; /* Center the logo */
+    border-radius: 50%; /* Optional: Make the logo circular */
+    transition: transform 0.3s ease; /* Smooth transition on hover */
+}
+
+.contact .ie-logo:hover {
+    transform: scale(1.1); /* Scale up the logo on hover */
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 500px;
+    margin: auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 15px; /* Increased padding for better spacing */
+    border: 1px solid #444; /* Add a subtle border */
+    background: #222; /* Dark background for inputs */
+    color: #fff; /* White text for better contrast */
+    border-radius: 8px; /* Rounded corners */
+    outline: none; /* Remove default outline */
+    transition: border-color 0.3s ease; /* Smooth transition for border color */
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #5561FF; /* Highlighted border color on focus */
+}
+
+.contact-form button {
+    background-color: #1717bd; /* Primary button color */
+    color: #fff;
+    padding: 15px 25px; /* Increased padding for a larger button */
+    border: none;
+    border-radius: 8px; /* More rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.contact-form button:hover {
+    background-color: #38428e; /* Darker shade for hover */
+    transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+.contact-info {
+    margin-top: 30px; /* Increased margin for better spacing */
+    font-size: 1.1em; /* Slightly larger text size */
+    line-height: 1.6; /* Increased line height for readability */
+}
+
+.contact-info p {
+    margin-bottom: 10px; /* Spacing below the paragraph */
+    font-weight: 500;
+}
+
+.contact-info ul {
+    list-style: none; /* Remove default list styling */
+    padding: 0;
+    margin: 0;
+}
+
+.contact-info li {
+    margin-bottom: 10px; /* Space between contact details */
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    .contact h2 {
+        font-size: 1.5em; /* Smaller font size for smaller screens */
+    }
+
+    .contact-form {
+        width: 100%; /* Full width for mobile */
+        padding: 0 20px; /* Padding on mobile */
+    }
+
+    .contact .ie-logo {
+        width: 80px; /* Smaller logo size on mobile */
+    }
+
+    .contact-form button {
+        padding: 10px 20px; /* Reduced padding for the button */
+    }
+}

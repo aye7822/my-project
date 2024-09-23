@@ -1,0 +1,43 @@
+.about {
+    /* General styles */
+    background-color: #0c0d10; /* Dark background */
+    color: #faf9f9d7; /* White text */
+    padding: 50px; /* Adjust padding as needed */
+    text-align: center;
+  }
+  
+  .about h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .about p {
+    font-size: 24px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+  }
+  
+  .about p.emphasized-text {
+    color: #071a12; /* Adjust the color as needed */
+    font-weight: normal; /* Optional: Remove bold styling if desired */
+  }
+  
+  .learn-more-button {
+    background-color: #1717bd;
+    color: #f0e4e4f5;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+   .learn-more-button:hover {
+    background-color: #38428e;
+    transform: translateY(-2px);
+  }
+  
+ .wefo-studio-logo {
+    height: 200px; /* Adjust height as needed */
+    width: auto;
+    margin: 150 150px; /* Adjust margin as needed */
+  }

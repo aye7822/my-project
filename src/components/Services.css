@@ -1,0 +1,63 @@
+.services {
+    padding: 60px 20px;
+    background: #000; /* Darker background for contrast */
+    color: #fff;
+    text-align: center;
+}
+
+/* Service list container */
+.service-list {
+    display: flex;
+    justify-content: space-around; /* Space between service items */
+    gap: 30px; /* Increased gap for better spacing */
+    align-items: flex-start; /* Align items at the top */
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+    margin-top: 40px; /* Spacing from top content */
+}
+
+/* Individual service item */
+.service-item {
+    background: #1b1b1b; /* Slightly lighter shade for the items */
+    color: #fff;
+    padding: 40px 20px; /* Padding adjustments */
+    border-radius: 20px; /* Rounded corners */
+    width: 300px; /* Adjust width for larger items */
+    transition: transform 0.3s, background 0.3s; /* Smooth transition */
+    position: relative; /* For positioning the arrow icon */
+    text-align: left; /* Align text to left */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* Add shadow for depth */
+}
+
+/* Arrow icon for service item */
+.service-item::after {
+    content: '↗'; /* Unicode arrow */
+    font-size: 1.5rem; /* Adjust size */
+    position: absolute;
+    top: 20px;
+    right: 20px; /* Position at the top right corner */
+    color: #fff; /* White color for contrast */
+}
+
+/* Specific styling for the first item */
+.service-item:first-of-type {
+    background: #3e38ff; /* Blue background for highlighted item */
+}
+
+/* Hover effect for service items */
+.service-item:hover {
+    transform: translateY(-10px); /* Slightly lift the item */
+    background: #333; /* Change background on hover */
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    .service-list {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center align items */
+    }
+
+    .service-item {
+        width: 100%; /* Full width on small screens */
+        max-width: 350px; /* Limit max width */
+    }
+}
